@@ -1,0 +1,8 @@
+.profile {
+    margin-inline: auto;
+    img {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 56px;
+    }
+}

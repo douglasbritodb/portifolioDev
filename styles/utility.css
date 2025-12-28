@@ -1,0 +1,115 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.title-lg-Asap {
+    font: var(--title-lg-Asap);
+    color: var(--bs-color-gray-100);
+}
+
+.subtitle-Inconsolata {
+    font: var(--subtitle-Inconsolata);
+    color: var(--bs-color-gray-200);
+}
+
+.text-sm-MavenPro {
+    font: var(--text-sm-MavenPro);
+    color: var(--bs-color-gray-300);
+    margin-bottom: 80px;
+}
+
+a {
+    align-items: center;
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+    /* Define a cor dos links */
+    color: inherit;
+}
+
+.text-color {
+    color: var(--bs-color-gray-200)
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    background-color: var(--bs-color-gray-400);
+    border-radius: 999px;
+    padding: 8px 16px; /* 8px vertical, 16px horizontal */
+    gap: 8px;
+    font: var(--text-md-MavenPro);
+    color: var(--bs-color-gray-200);
+    white-space: nowrap; /* Impede que o texto quebre dentro da tag */
+}
+
+/* Regras gerais para todos os ícones */
+.icon {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    
+    /* Configuração da máscara */
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* Configuração Individual: Caminho do arquivo e Cor */
+.github {
+    -webkit-mask-image: url('../assets/icons/GitHub.svg');
+    mask-image: url('../assets/icons/GitHub.svg');
+    background-color: var(--bs-color-gray-200); /* Cor do GitHub */
+}
+
+.html {
+    -webkit-mask-image: url('../assets/icons/HTML.svg');
+    mask-image: url('../assets/icons/HTML.svg');
+    background-color: var(--brand-color-red); /* Cor do HTML (Laranja) */
+}
+
+.css {
+    -webkit-mask-image: url('../assets/icons/CSS.svg');
+    mask-image: url('../assets/icons/CSS.svg');
+    background-color: var(--brand-color-blue); /* Cor do CSS (Azul) */
+}
+
+.js {
+    -webkit-mask-image: url('../assets/icons/Javascript.svg');
+    mask-image: url('../assets/icons/Javascript.svg');
+    background-color: var(--brand-color-yellow); /* Cor do JS (Amarelo) */
+}
+
+.react {
+    -webkit-mask-image: url('../assets/icons/react.svg');
+    mask-image: url('../assets/icons/react.svg');
+    background-color: var(--brand-color-blue); /* Cor do React (Azul) */
+}
+
+.nodejs {
+    -webkit-mask-image: url('../assets/icons/Node.js.svg');
+    mask-image: url('../assets/icons/Node.js.svg');
+    background-color: var(--brand-color-green); /* Cor do Node.js (Verde) */
+}
+
+/* Efeito Hover: Se quiser que todos fiquem brancos ao passar o mouse no card */
+/* .tags:hover .icon {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+} */
+
+.info {
+    margin-top: 120px;
+    margin-bottom: 183px;
+    margin-left: 163px;
+    margin-right: 163px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro da área útil */
+    text-align: center;
+}
