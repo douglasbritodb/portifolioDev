@@ -44,10 +44,6 @@ span {
     color: var(--brand-color-red)
 }
 
-.text {
-    margin: 8px 0 12px 0;
-}
-
 img {
     /* Garante que as imagens não excedam a largura do contêiner pai */
     max-width: 100%;
@@ -60,6 +56,10 @@ img {
     padding-inline: 0px;
     /* Centraliza o contêiner horizontalmente */
     margin-inline: auto;
+}
+
+main {
+    padding: 72px 120px 144px 120px;
 }
 
 #primary {
@@ -84,5 +84,18 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+#grid-tags {
+    margin-top: 80px;
+}
+
+#featured {
+    grid-area: featured;
+
+    &>div {
+        grid-template-columns: repeat(3, 330px);
+        grid-template-rows: repeat(3, 280px);
     }
 }

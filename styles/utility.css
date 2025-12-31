@@ -1,25 +1,65 @@
-.grid {
+.display-grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    /* Define o fluxo da grade para ser em colunas */
+    grid-auto-flow: column;
+}
+
+.display-flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
     justify-content: center;
     margin-inline: auto;
 }
 
+.gap-16 {
+    gap: 16px;
+}
+
 .title-lg-Asap {
     font: var(--title-lg-Asap);
-    color: var(--bs-color-gray-100);
+}
+
+.title-md-Asap {
+    font: var(--title-md-Asap);
+}
+
+.title-sm-Asap {
+    font: var(--title-sm-Asap);
 }
 
 .subtitle-Inconsolata {
     font: var(--subtitle-Inconsolata);
-    color: var(--bs-color-gray-200);
 }
 
 .text-sm-MavenPro {
     font: var(--text-sm-MavenPro);
+}
+
+.text-color-100 {
+    color: var(--bs-color-gray-100);
+}
+
+.text-color-200 {
+    color: var(--bs-color-gray-200);
+}
+
+.text-color-300 {
     color: var(--bs-color-gray-300);
-    margin-bottom: 80px;
+}
+
+.text-color-400 {
+    color: var(--bs-color-gray-400);
+}
+
+.text-color-500 {
+    color: var(--bs-color-gray-500);
+}
+
+.text-color-600 {
+    color: var(--bs-color-gray-600);
 }
 
 a {
@@ -28,10 +68,6 @@ a {
     text-decoration: none;
     /* Define a cor dos links */
     color: inherit;
-}
-
-.text-color {
-    color: var(--bs-color-gray-200)
 }
 
 .tags {
@@ -112,4 +148,34 @@ a {
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo dentro da área útil */
     text-align: center;
+}
+
+.gap-24 {
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+.card {
+    justify-self: baseline;
+    grid-template-columns: 330px 280px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--bs-color-gray-400);
+    
+    img {
+        border-radius: 8px;
+    }
+
+}
+
+.img-card {
+    padding-bottom: 20px;
+}
+
+.text-card {
+    padding: 4px 4px;
+
+    .title-sm-Asap {
+        margin-bottom: 8px;
+    }
 }
