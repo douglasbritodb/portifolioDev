@@ -9,13 +9,22 @@
 
 .display-flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-inline: auto;
 }
 
 .gap-16 {
     gap: 16px;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.paddingTop-8 {
+    padding-top: 8px;
+}
+
+.paddingTop-20 {
+    padding-top: 20px;
 }
 
 .title-lg-Asap {
@@ -36,6 +45,10 @@
 
 .text-sm-MavenPro {
     font: var(--text-sm-MavenPro);
+}
+
+.text-md-MavenPro {
+    font: var(--text-md-MavenPro);
 }
 
 .text-color-100 {
@@ -62,12 +75,20 @@
     color: var(--bs-color-gray-600);
 }
 
-a {
-    align-items: center;
-    /* Remove o sublinhado padrão dos links */
-    text-decoration: none;
-    /* Define a cor dos links */
-    color: inherit;
+.span-red {
+        color: var(--brand-color-red)
+}
+.span-purple {
+        color: var(--brand-color-purple)
+}
+
+.container {
+    /* Define a largura máxima do contêiner */
+    max-width: 1366px;
+    /* Define o espaçamento interno do contêiner */
+    padding-inline: 0px;
+    /* Centraliza o contêiner horizontalmente */
+    margin-inline: auto;
 }
 
 .tags {
@@ -165,7 +186,6 @@ a {
     img {
         border-radius: 8px;
     }
-
 }
 
 .img-card {
@@ -177,5 +197,80 @@ a {
 
     .title-sm-Asap {
         margin-bottom: 8px;
+    }
+}
+
+.card:hover {
+    position: relative;
+    outline: 1.5px solid var(--bs-color-gray-300);
+    transition: 0.4s;
+}
+
+.services {
+    background: var(--bs-color-gray-600);
+    padding: 88px 120px 120px 120px;
+    justify-items: center;
+}
+
+.text-services {
+    justify-items: center;
+    gap: 8px;
+}
+
+.soluctions {
+    padding-top: 56px;
+    grid-template-columns: repeat(3, 280px);
+    gap: 24px;
+}
+
+.card-soluction {
+    border: solid 2px var(--bs-color-gray-500);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.img-soluctions {
+    align-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.contacts {
+    justify-items: center;
+    padding: 128px 120px 200px 120px;
+    
+    background: url(../assets/Background_Contacts.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden; /* Evita que as margens "vazem" */
+
+    span {
+        color: var(--brand-color-purple);
+    }
+
+    h1, h2, p {
+        justify-self: center;
+    }
+}
+
+.card-contacts {
+    gap: 12px;
+    justify-content: left;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.card-img {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.links:hover {
+    transition: box-shadow 0.4s ease; /* Suaviza a aparição do contorno */;
+    box-shadow: 0 0 0 1.5px var(--brand-color-blue); /* Contorno azul ao redor do link */
+    
+    :not(.card-contacts, .card-img, a) {
+        filter: brightness(0) saturate(100%) invert(47%) sepia(100%) saturate(353%) hue-rotate(162deg) brightness(96%) contrast(93%);
+        
     }
 }
