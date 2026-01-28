@@ -137,14 +137,14 @@
 }
 
 .js {
-    -webkit-mask-image: url('../assets/icons/Javascript.svg');
-    mask-image: url('../assets/icons/Javascript.svg');
+    -webkit-mask-image: url('../assets/icons/JavaScript.svg');
+    mask-image: url('../assets/icons/JavaScript.svg');
     background-color: var(--brand-color-yellow); /* Cor do JS (Amarelo) */
 }
 
 .react {
-    -webkit-mask-image: url('../assets/icons/react.svg');
-    mask-image: url('../assets/icons/react.svg');
+    -webkit-mask-image: url('../assets/icons/React.svg');
+    mask-image: url('../assets/icons/React.svg');
     background-color: var(--brand-color-blue); /* Cor do React (Azul) */
 }
 
